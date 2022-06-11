@@ -266,12 +266,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(40,10)" to="(230,10)"/>
-    <wire from="(40,200)" to="(230,200)"/>
+    <wire from="(40,180)" to="(200,180)"/>
+    <wire from="(40,10)" to="(200,10)"/>
     <wire from="(460,130)" to="(460,150)"/>
-    <wire from="(230,10)" to="(230,200)"/>
+    <wire from="(200,10)" to="(200,180)"/>
+    <wire from="(40,10)" to="(40,180)"/>
     <wire from="(420,150)" to="(460,150)"/>
-    <wire from="(40,10)" to="(40,200)"/>
     <wire from="(460,150)" to="(500,150)"/>
     <comp lib="6" loc="(551,122)" name="Text">
       <a name="text" val="Gravar"/>
@@ -303,21 +303,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="8"/>
       <a name="label" val="Memória"/>
     </comp>
-    <comp lib="6" loc="(88,89)" name="Text">
-      <a name="text" val="0010 - Divisão"/>
-    </comp>
     <comp lib="6" loc="(302,95)" name="Text">
       <a name="text" val="Numero 2"/>
+    </comp>
+    <comp lib="6" loc="(123,149)" name="Text">
+      <a name="text" val="0101 - Devolve o Quadrado"/>
+    </comp>
+    <comp lib="6" loc="(96,69)" name="Text">
+      <a name="text" val="0001 -  Subtração"/>
     </comp>
     <comp lib="0" loc="(500,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(97,69)" name="Text">
-      <a name="text" val="0001 -  Subtração"/>
+    <comp lib="6" loc="(102,170)" name="Text">
+      <a name="text" val="0110 - Maior menor"/>
     </comp>
-    <comp lib="6" loc="(114,126)" name="Text">
-      <a name="text" val="0100 - Resto da Divisão"/>
+    <comp lib="6" loc="(87,89)" name="Text">
+      <a name="text" val="0010 - Divisão"/>
     </comp>
     <comp lib="6" loc="(102,110)" name="Text">
       <a name="text" val="0011 - Multiplicação"/>
@@ -340,6 +343,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="6" loc="(98,29)" name="Text">
       <a name="text" val="OPERAÇÕES"/>
+    </comp>
+    <comp lib="6" loc="(112,130)" name="Text">
+      <a name="text" val="0100 - Resto da Divisão"/>
     </comp>
     <comp lib="0" loc="(420,90)" name="Pin">
       <a name="width" val="8"/>
