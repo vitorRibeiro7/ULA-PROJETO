@@ -81,15 +81,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(20,170)" to="(130,170)"/>
     <wire from="(20,350)" to="(130,350)"/>
     <wire from="(20,230)" to="(130,230)"/>
+    <wire from="(530,220)" to="(530,310)"/>
     <wire from="(510,190)" to="(510,210)"/>
     <wire from="(400,320)" to="(400,350)"/>
     <wire from="(410,210)" to="(510,210)"/>
-    <wire from="(420,220)" to="(520,220)"/>
+    <wire from="(430,310)" to="(530,310)"/>
     <wire from="(210,180)" to="(250,180)"/>
     <wire from="(130,170)" to="(130,200)"/>
     <wire from="(130,290)" to="(130,320)"/>
     <wire from="(130,230)" to="(130,260)"/>
     <wire from="(130,350)" to="(130,380)"/>
+    <wire from="(430,220)" to="(430,310)"/>
     <wire from="(570,190)" to="(570,340)"/>
     <wire from="(1120,620)" to="(1130,620)"/>
     <wire from="(1140,620)" to="(1150,620)"/>
@@ -124,9 +126,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(20,320)" to="(130,320)"/>
     <wire from="(20,200)" to="(130,200)"/>
     <wire from="(240,210)" to="(240,360)"/>
-    <wire from="(420,310)" to="(520,310)"/>
-    <wire from="(420,220)" to="(420,310)"/>
-    <wire from="(520,220)" to="(520,310)"/>
+    <wire from="(430,220)" to="(530,220)"/>
     <wire from="(20,350)" to="(20,380)"/>
     <wire from="(20,230)" to="(20,260)"/>
     <wire from="(20,290)" to="(20,320)"/>
@@ -154,7 +154,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(240,210)" to="(250,210)"/>
     <wire from="(210,240)" to="(220,240)"/>
     <wire from="(10,150)" to="(10,400)"/>
-    <comp lib="5" loc="(210,60)" name="7-Segment Display"/>
     <comp lib="0" loc="(480,330)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
@@ -165,6 +164,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="3"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp loc="(380,60)" name="DISPLAY"/>
     <comp loc="(390,220)" name="ACUMULADOR">
       <a name="facing" val="north"/>
     </comp>
@@ -174,8 +174,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="R"/>
       <a name="labelfont" val="SansSerif plain 10"/>
     </comp>
-    <comp lib="5" loc="(300,120)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(260,120)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(495,30)" name="Text">
+      <a name="text" val="Resultado"/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(560,120)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(480,120)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(300,60)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+      <a name="label" val="op"/>
+    </comp>
     <comp lib="5" loc="(370,310)" name="Button">
       <a name="labelloc" val="north"/>
     </comp>
@@ -184,11 +193,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="font" val="SansSerif bold 8"/>
     </comp>
     <comp loc="(560,340)" name="separaraOperador"/>
-    <comp lib="5" loc="(480,120)" name="Hex Digit Display"/>
     <comp lib="0" loc="(290,220)" name="Tunnel">
       <a name="width" val="8"/>
       <a name="label" val="R"/>
     </comp>
+    <comp lib="5" loc="(520,120)" name="Hex Digit Display"/>
     <comp lib="0" loc="(160,320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
@@ -211,6 +220,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif plain 10"/>
     </comp>
+    <comp lib="0" loc="(500,60)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+      <a name="label" val="A"/>
+    </comp>
     <comp lib="6" loc="(544,373)" name="Text">
       <a name="text" val="Separa"/>
       <a name="font" val="SansSerif plain 10"/>
@@ -232,13 +246,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="Numero"/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="5" loc="(30,60)" name="7-Segment Display"/>
-    <comp lib="5" loc="(390,60)" name="7-Segment Display"/>
-    <comp lib="0" loc="(280,60)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="width" val="8"/>
-      <a name="label" val="op"/>
+    <comp lib="6" loc="(475,279)" name="Text">
+      <a name="text" val="R : Resultado"/>
+      <a name="font" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="5" loc="(30,60)" name="7-Segment Display"/>
+    <comp lib="5" loc="(430,60)" name="7-Segment Display"/>
     <comp lib="0" loc="(560,350)" name="Tunnel">
       <a name="label" val="vn"/>
       <a name="labelfont" val="SansSerif plain 8"/>
@@ -251,13 +264,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="Executa"/>
       <a name="font" val="SansSerif bold 9"/>
     </comp>
-    <comp lib="0" loc="(460,60)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="width" val="8"/>
-      <a name="label" val="A"/>
+    <comp lib="6" loc="(300,32)" name="Text">
+      <a name="text" val="Operação"/>
+      <a name="font" val="SansSerif bold 12"/>
     </comp>
-    <comp loc="(540,60)" name="DISPLAY"/>
-    <comp lib="5" loc="(440,120)" name="Hex Digit Display"/>
     <comp lib="0" loc="(160,200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
@@ -266,21 +276,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(75,189)" name="Text">
       <a name="text" val="Adição"/>
     </comp>
-    <comp lib="5" loc="(340,120)" name="Hex Digit Display"/>
     <comp lib="5" loc="(80,120)" name="Hex Digit Display"/>
-    <comp loc="(360,60)" name="DISPLAY"/>
-    <comp lib="6" loc="(470,298)" name="Text">
-      <a name="text" val="A : Acumulador"/>
-      <a name="font" val="SansSerif bold 11"/>
-    </comp>
     <comp loc="(210,360)" name="MULTIPLICADOR 8 BITS">
       <a name="label" val="011"/>
       <a name="labelloc" val="south"/>
       <a name="labelfont" val="SansSerif plain 10"/>
-    </comp>
-    <comp lib="6" loc="(465,279)" name="Text">
-      <a name="text" val="R : Resultado"/>
-      <a name="font" val="SansSerif bold 11"/>
     </comp>
     <comp loc="(190,290)" name="DIVISOR">
       <a name="facing" val="north"/>
@@ -294,6 +294,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A"/>
       <a name="labelfont" val="SansSerif plain 10"/>
     </comp>
+    <comp loc="(580,60)" name="DISPLAY"/>
     <comp lib="6" loc="(546,384)" name="Text">
       <a name="text" val="Operador"/>
       <a name="font" val="SansSerif plain 10"/>
@@ -310,7 +311,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1110,620)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="5" loc="(520,120)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(470,260)" name="Text">
+      <a name="text" val="N : Numero"/>
+      <a name="font" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(160,380)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
@@ -358,13 +362,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="south"/>
       <a name="labelfont" val="SansSerif plain 10"/>
     </comp>
-    <comp lib="6" loc="(460,260)" name="Text">
-      <a name="text" val="N : Numero"/>
+    <comp lib="5" loc="(230,60)" name="7-Segment Display"/>
+    <comp lib="6" loc="(476,240)" name="Text">
+      <a name="text" val="OP: Operação"/>
       <a name="font" val="SansSerif bold 11"/>
-    </comp>
-    <comp lib="6" loc="(456,31)" name="Text">
-      <a name="text" val="Resultado"/>
-      <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="7" loc="(500,340)" name="MEMORIA">
       <a name="label" val="Memória"/>
@@ -376,10 +377,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="6" loc="(280,32)" name="Text">
-      <a name="text" val="Operação"/>
-      <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(1160,600)" name="Splitter">
       <a name="facing" val="south"/>
@@ -396,18 +393,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="8"/>
       <a name="label" val="A"/>
     </comp>
+    <comp lib="5" loc="(280,120)" name="Hex Digit Display"/>
     <comp lib="0" loc="(460,340)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="6" loc="(466,240)" name="Text">
-      <a name="text" val="OP: Operação"/>
-      <a name="font" val="SansSerif bold 11"/>
-    </comp>
+    <comp lib="5" loc="(360,120)" name="Hex Digit Display"/>
     <comp lib="6" loc="(76,249)" name="Text">
       <a name="text" val="Subtração"/>
     </comp>
     <comp lib="5" loc="(160,120)" name="Hex Digit Display"/>
     <comp lib="5" loc="(120,120)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(320,120)" name="Hex Digit Display"/>
     <comp lib="0" loc="(200,170)" name="Constant">
       <a name="facing" val="south"/>
       <a name="value" val="0x0"/>
@@ -420,6 +416,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="6" loc="(76,369)" name="Text">
       <a name="text" val="Multiplicação"/>
+    </comp>
+    <comp lib="6" loc="(480,298)" name="Text">
+      <a name="text" val="A : Acumulador"/>
+      <a name="font" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1160,600)" name="Tunnel">
       <a name="facing" val="south"/>
