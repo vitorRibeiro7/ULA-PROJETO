@@ -15,21 +15,5 @@
 
 <h2>💼 Autores</h2>
 
-<table align="center"><tr>
-
-<td align="center"><a href="https://github.com/vitorRibeiro7">
- <img style="border-radius: 50%;" src="https://github.com/vitorRibeiro7.png" width="80px;" alt=""/>
-<br />
- <b>Vitor Ribeiro</b>
- </a> <a href="https://github.com/JessePires" title="Repositorio Jessé"></a>
-</td>
-
-<td align="center"><a href="https://github.com/DiogoRodriguees">
- <img style="border-radius: 50%;" src="https://github.com/DiogoRodriguees.png" width="80px;" alt=""/>
-<br />
- <b>Diogo Rodrigues</b>
- </a> <a href="https://github.com/JessePires" title="Repositorio Jessé"></a>
-</td>
-
-
-</tr></table>
+            DIOGO RODRIGUES
+            VITOR RIBEIRO
